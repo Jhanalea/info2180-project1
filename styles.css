@@ -1,11 +1,236 @@
 /* Add your CSS to this file */
+
+/*---------------------------------- GENERAL ----------------------------------*/
 body {
     margin: 0;
-    font-size: 16px;
+    font-size: 18px;
+    font-family: -apple-system,BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif;
 }
 
 .container {
     margin: 0 auto;
     max-width: 960px;
     width: 100%;
+    padding: 10px 0;
+}
+
+
+/*---------------------------------- HEADER & NAVIGATION ----------------------------------*/
+header{
+    background-color: #FFFFFF;
+    font-size: 18px;
+}
+
+header > .container{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0;
+}
+
+ul > li{
+    display: inline-flex;
+    list-style: none;
+    padding-left: 10px;
+}
+
+li > a{
+    text-decoration: none;
+    font-weight: bold;
+    color: #6b7280;
+}
+
+li > a:hover{
+    color: #5A67D8;
+}
+
+/*---------------------------------- OVERVIEW & HERO SECTION ----------------------------------*/
+
+.overview-hero{
+    background-color: #E2E8F0;
+    height: 300px;
+    display: flex;
+    align-items: center;
+}
+
+.overview-hero > .container{
+    display: flex;
+    align-items: center;
+}
+
+.overview-hero-image{
+    float: left;
+    margin: 0 150px 0 50px;
+}
+
+.overview-hero-image img{
+    height: 300px;
+    width: 300px;
+}
+
+/*---------------------------------- LEARN ABOUT & CARDS ----------------------------------*/
+
+.learn-about{
+    float: none;
+}
+
+.learn-about h2{
+    font-size: 24px;
+    color: #48BB78;
+}
+
+.cards{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 15px;
+}
+
+.card{
+    border: 1px solid #E2E8F0;
+    border-radius: 5px;
+    padding: 30px;
+    box-shadow: 0 12px 30px rgba(0,0,0, 0.14);
+}
+
+.card img{
+    width: 300px;
+    height: 300px;
+}
+
+.card-body{
+    padding: 10px;
+}
+
+.card-body > h3{
+    color: #48BB78;
+    font-size: 21px;
+}
+
+
+/*---------------------------------- TESTING & CTA ----------------------------------*/
+
+.testing{
+    background-color: #4A5568;
+    color: #FFFFFF;
+    height: 250px;
+    margin: 30px 0;
+    display: flex;
+    align-items: center;
+    padding: 20px 0;
+}
+.testing .container{
+    display: inline-flex;
+    align-items: center;
+}
+
+.testing-desciption p{
+    margin-top: 40px;
+    margin-right: 100px;
+}
+
+.cta{
+    width: 200px;
+    height: 40px;
+    background-color: #48BB78;
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-right: 100px;
+    padding: 4px 10px 4px 10px;
+}
+
+.btn{
+    color: #FFFFFF;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+/*---------------------------------- STORIES ----------------------------------*/
+
+
+.stories > .container h2, .stories > .container a{
+    color: #5A67D8;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+article{
+    height: 250px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.stories img{
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    float: left;
+    margin-right: 50px;
+}
+
+.article-body h3 ~ p{
+    padding: 5px 0;
+}
+
+
+/*---------------------------------- NEWSLETTER ----------------------------------*/
+
+.newsletter{
+    background-color: #48BB78;
+    color: #FFFFFF;
+    display: flex;
+    align-content: center;
+    justify-content: center;
+    height: 250px;
+}
+
+.newsletter > .container{
+    width: 40%;
+}
+
+.newsletter h3{
+    text-align: center;
+}
+.newsletter p{
+    text-align: center;
+}
+
+.newsletter form{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+#email{
+    border: none;
+    border-radius: 3px;
+    width: 350px;
+    height: 40px;
+    margin-right: 10px;
+    padding-left: 10px;
+}
+.message{
+    padding: 10px 0;
+    text-align: center;
+}
+.newsletter .btn{
+    height: 40px;
+    border: none;
+    border-radius: 3px;
+    width: 150px;
+    background-color: #5A67D8;
+    font-weight: bold;
+
+}
+
+/*---------------------------------- FOOTER ----------------------------------*/
+
+
+footer{
+    background-color: #4A5568;
+    color: #FFFFFF;
 }
